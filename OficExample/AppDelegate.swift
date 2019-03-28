@@ -15,6 +15,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        /*let url = URL(string: "https://raw.githubusercontent.com/Ludplay/hinova/master/oficinas.json")!
+        let networkProcessor = NetworkProcessor(url: url)
+        
+        networkProcessor.DownloadJSONFromUrl { (jsonDictionary) in
+            //print(jsonDictionary)
+            
+            if let array = jsonDictionary as? [String: Any] {
+                if let firstObject = array.first {
+                    // access individual object in array
+                }
+                
+                let listaOficinas = array["ListaOficinas"] as? [String: Any]
+                
+                let classeOficina = listaOficinas!["ClasseOficina"] as? [Any]
+                
+                let oficinas = classeOficina! as? [Any]
+                
+                for (index, name) in (oficinas?.enumerated())!
+                {
+                    let ofic = oficinas![index] as? [String: Any]
+                    if let nome = ofic!["Nome"]{
+                        print(nome)
+                    }
+                }
+            }
+        }*/
+        
         // Override point for customization after application launch.
         return true
     }

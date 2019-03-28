@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		87A711DB224C02140002339E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A711DA224C02140002339E /* AppDelegate.swift */; };
-		87A711DD224C02140002339E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A711DC224C02140002339E /* ViewController.swift */; };
 		87A711E0224C02140002339E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A711DE224C02140002339E /* Main.storyboard */; };
 		87A711E2224C02140002339E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A711E1224C02140002339E /* Assets.xcassets */; };
 		87A711E5224C02140002339E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A711E3224C02140002339E /* LaunchScreen.storyboard */; };
 		87A711F0224C02140002339E /* OficExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A711EF224C02140002339E /* OficExampleTests.swift */; };
 		87A711FB224C02140002339E /* OficExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A711FA224C02140002339E /* OficExampleUITests.swift */; };
+		87A71209224C0E600002339E /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A71208224C0E600002339E /* StoriesTableViewController.swift */; };
+		87A8D5D0224CF50200239D9D /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8D5CF224CF50100239D9D /* NetworkProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		87A711D7224C02140002339E /* OficExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OficExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A711DA224C02140002339E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87A711DC224C02140002339E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87A711DF224C02140002339E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87A711E1224C02140002339E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A711E4224C02140002339E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		87A711F6224C02140002339E /* OficExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OficExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A711FA224C02140002339E /* OficExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficExampleUITests.swift; sourceTree = "<group>"; };
 		87A711FC224C02140002339E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87A71208224C0E600002339E /* StoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
+		87A8D5CF224CF50100239D9D /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				87A711DA224C02140002339E /* AppDelegate.swift */,
-				87A711DC224C02140002339E /* ViewController.swift */,
 				87A711DE224C02140002339E /* Main.storyboard */,
 				87A711E1224C02140002339E /* Assets.xcassets */,
 				87A711E3224C02140002339E /* LaunchScreen.storyboard */,
 				87A711E6224C02140002339E /* Info.plist */,
+				87A71208224C0E600002339E /* StoriesTableViewController.swift */,
+				87A8D5CF224CF50100239D9D /* NetworkProcessor.swift */,
 			);
 			path = OficExample;
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A711DD224C02140002339E /* ViewController.swift in Sources */,
+				87A8D5D0224CF50200239D9D /* NetworkProcessor.swift in Sources */,
+				87A71209224C0E600002339E /* StoriesTableViewController.swift in Sources */,
 				87A711DB224C02140002339E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZR4GLNU2C;
 				INFOPLIST_FILE = OficExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZR4GLNU2C;
 				INFOPLIST_FILE = OficExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
